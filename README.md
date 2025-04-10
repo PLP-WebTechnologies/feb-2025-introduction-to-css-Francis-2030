@@ -34,113 +34,98 @@ Happy Coding! 💻✨
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Introduction</title>
-    <!-- External CSS Link -->
+    <!-- Task 1: Link external CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header id="main-header">
-        <h1>CSS Styling Exercise</h1>
+        <h1>Welcome to CSS Styling</h1>
     </header>
     
-    <main class="content-box">
+    <main class="content">
         <section>
-            <h2 class="section-title">Key Features</h2>
-            <p>Demonstrating fundamental CSS techniques:</p>
-            <ul class="feature-list">
-                <li>Multiple selector types</li>
-                <li>Color and typography</li>
-                <li>Box model properties</li>
+            <h2 class="highlight">About This Page</h2>
+            <p>This page demonstrates basic CSS styling techniques including:</p>
+            <ul>
+                <li>Selectors (element, class, ID)</li>
+                <li>Colors and typography</li>
+                <li>Spacing with margins and padding</li>
+                <li>Border styling</li>
             </ul>
         </section>
         
         <section>
-            <h2 class="section-title">Styled Elements</h2>
-            <img src="https://via.placeholder.com/400x300" alt="CSS Demo" class="styled-image">
-            <p class="image-caption">This image showcases border and shadow effects</p>
+            <h2>Styled Image</h2>
+            <!-- Task: Style an image -->
+            <img src="https://via.placeholder.com/400x300" alt="Example image" class="featured-image">
         </section>
     </main>
     
-    <footer id="page-footer">
-        <p>CSS Practice Project</p>
+    <footer>
+        <p>CSS Practice Exercise</p>
     </footer>
 </body>
 </html>
-/* ===== BASE STYLES ===== */
-/* Element Selector */
+
+/* Task 2: Apply at least 3 different selectors */
+/* 1. Element selector */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f9f9f9;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
-/* ===== HEADER STYLES ===== */
-/* ID Selector */
+/* 2. ID selector */
 #main-header {
     background-color: #2c3e50;
-    color: #ecf0f1;
-    text-align: center;
-    padding: 1.5rem 0;
-    margin-bottom: 2rem;
-    border-bottom: 3px solid #e74c3c;
-}
-
-/* ===== MAIN CONTENT ===== */
-/* Class Selector */
-.content-box {
-    width: 85%;
-    margin: 0 auto 2rem;
-    padding: 2rem;
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.section-title {
-    color: #2c3e50;
-    font-family: 'Georgia', serif;
-    border-left: 4px solid #e74c3c;
-    padding-left: 10px;
-}
-
-/* ===== IMAGE STYLING ===== */
-.styled-image {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 1.5rem auto;
-    border: 2px solid #3498db;
-    border-radius: 4px;
-    padding: 5px;
-    background: #ecf0f1;
-}
-
-.image-caption {
-    text-align: center;
-    font-style: italic;
-    color: #7f8c8d;
-    margin-top: -1rem;
-}
-
-/* ===== LIST STYLING ===== */
-.feature-list {
-    padding-left: 1.5rem;
-}
-
-.feature-list li {
-    margin-bottom: 0.5rem;
-    padding-left: 0.5rem;
-}
-
-/* ===== FOOTER STYLING ===== */
-#page-footer {
-    background-color: #2c3e50;
-    color: #ecf0f1;
+    color: white;
     text-align: center;
     padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* 3. Class selector */
+.highlight {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Task: Style an image */
+.featured-image {
+    border: 3px solid #3498db;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Task: Margin, Padding & Borders */
+.content {
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Different font for headings */
+h1, h2 {
+    font-family: 'Georgia', serif;
+}
+
+/* Additional spacing for readability */
+p, ul {
+    margin-bottom: 1.5rem;
+}
+
+footer {
+    text-align: center;
     margin-top: 2rem;
-    border-top: 3px solid #e74c3c;
+    padding: 1rem;
+    background-color: #2c3e50;
+    color: white;
 }
